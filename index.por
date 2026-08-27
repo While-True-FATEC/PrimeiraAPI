@@ -3,10 +3,13 @@ algoritmo
 var
 
 nome: caractere
+idade: inteiro
 
 inicio
 
-escreva ("escreva seu nome")
+escreva ("Escreva seu nome: ")
 leia (nome)
+
+escreva("Qual a sua idade: ")
 
 fimalgoritmo
