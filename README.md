@@ -4,4 +4,4 @@
 
 De While True
 
-Banco de Dados 2° Semestre 2026.
+Banco de Dados 2° Semestre 2026. :->
