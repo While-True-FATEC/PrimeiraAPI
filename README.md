@@ -11,7 +11,14 @@ O desafio consiste em criar um sistema que ajude a organizar e validar plantões
 ---
 
 ### 🌟 Backlog do produto
-
+<!--
+| User Story |  Sprint  | Prioridade |
+| ---------- | -------- | ---------- |
+| Dado 1     | Dado 2   | Dado 3     |
+| Dado 4     | Dado 5   | Dado 6     |
+| Dado 1     | Dado 2   | Dado 3     |
+| Dado 4     | Dado 5   | Dado 6     |
+-->
 ---
 
 ### 🌟 Cronograma do projeto
