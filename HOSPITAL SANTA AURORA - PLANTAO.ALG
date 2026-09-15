@@ -21,6 +21,7 @@ Inicio
    se qtd_total > 50 entao
       Escreval("Limite de profissionais ultrapassou 50 médicos no plantão. Verifique novamente a escala")
    fimse
+   limpatela
 
 
 Fimalgoritmo
