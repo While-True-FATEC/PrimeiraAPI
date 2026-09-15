@@ -8,12 +8,17 @@ Inicio
 
 escreval("Insira a quantidade de Pediatras disponíveis: ")
 leia(qtd_ped)
+ se (qtd_ped < 0) entao
+ escreval ("Quantidade nao permitida")
+ fimse
 
 escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
 leia(qtd_clinico)
 
 escreval("Insira a quantidade de Cirurgiões disponíveis: ")
 leia(qtd_cirurgiao)
+
+
 
 
 Fimalgoritmo
