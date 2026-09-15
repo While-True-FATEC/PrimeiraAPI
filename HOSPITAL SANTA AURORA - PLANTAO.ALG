@@ -9,7 +9,7 @@ Inicio
 escreval("Insira a quantidade de Pediatras disponíveis: ")
 leia(qtd_ped)
  se (qtd_ped < 0) entao
- escreval ("Quantidade nao permitida")
+ escreval ("Quantidade inserida nao permitida")
  fimse
 
 escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
