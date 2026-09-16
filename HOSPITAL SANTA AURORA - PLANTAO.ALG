@@ -22,6 +22,11 @@ Inicio
       Escreval("Limite de profissionais ultrapassou 50 médicos no plantão. Verifique novamente a escala")
    fimse
    limpatela
+   
+   //Isabelle: Mensagem de erro ao não alcançar o mínimo de profissionais. (Total)
+   se qtd_total < 12 entao
+      escreval("Número mínimo de profissionais inserido. [12 Mínimo]."
+   fimse
 
 
 Fimalgoritmo
