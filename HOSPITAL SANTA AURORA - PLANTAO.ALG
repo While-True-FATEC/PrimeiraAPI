@@ -17,11 +17,11 @@ Inicio
 
 
    //Camila: mensagem de erro ao ultrapassar 50 profissionais
+   //total no plantão
    qtd_total <- qtd_ped + qtd_clinico + qtd_cirurgiao
    se qtd_total > 50 entao
       Escreval("Limite de profissionais ultrapassou 50 médicos no plantão. Verifique novamente a escala")
    fimse
-   limpatela
 
 
 Fimalgoritmo
