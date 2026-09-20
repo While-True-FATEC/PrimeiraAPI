@@ -22,7 +22,7 @@ Inicio
       escreval("Insira a quantidade de Pediatras disponíveis: ")
       leia(qtd_ped)
 
-      se (qtd_ped < 1) e (qtd_ped = 0) entao
+      se (qtd_ped < 1) entao
          escreval("Cobertura mínima não atingida. [Mínimo 1]")
       fimse
 
@@ -44,7 +44,7 @@ Inicio
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
-      se (qtd_cirurgiao < 1) e (qtd_cirurgiao = 0) entao
+      se (qtd_cirurgiao < 1) entao
          escreval("Cobertura mínima não atingida. [Mínimo 1]")
       fimse
 
@@ -65,12 +65,12 @@ Inicio
       escreval("Insira a quantidade de Pediatras disponíveis: ")
       leia(qtd_ped)
 
-      se (qtd_ped < 1) e (qtd_ped = 0) entao
+      se (qtd_ped < 1) entao
          escreval("Cobertura mínima não atingida. [Mínimo 1]")
       fimse
 
       se (qtd_ped < 0) entao
-         escreval ("Quantidade inserida nao permitida")
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
@@ -81,18 +81,18 @@ Inicio
       fimse
 
       se (qtd_clinico < 0) entao
-         escreval ("Quantidade inserida nao permitida")
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
-      se (qtd_cirurgiao < 1) e (qtd_cirurgiao = 0) entao
+      se (qtd_cirurgiao < 1) entao
          escreval("Cobertura mínima não atingida. [Mínimo 1]")
       fimse
 
       se (qtd_cirurgiao < 0) entao
-         escreval ("Quantidade inserida nao permitida")
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
    fimse
@@ -108,12 +108,12 @@ Inicio
       escreval("Insira a quantidade de Pediatras disponíveis: ")
       leia(qtd_ped)
 
-      se (qtd_ped < 1) e (qtd_ped = 0) entao
+      se (qtd_ped < 1) entao
          escreval("Cobertura mínima não atingida. [Mínimo 1]")
       fimse
 
       se (qtd_ped < 0) entao
-         escreval ("Quantidade inserida nao permitida")
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
@@ -124,18 +124,18 @@ Inicio
       fimse
 
       se (qtd_clinico < 0) entao
-         escreval ("Quantidade inserida nao permitida")
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
-      se (qtd_cirurgiao < 1) e (qtd_cirurgiao = 0) entao
+      se (qtd_cirurgiao < 1) entao
          escreval("Cobertura mínima não atingida. [Mínimo 1]")
       fimse
 
       se (qtd_cirurgiao < 0) entao
-         escreval ("Quantidade inserida nao permitida")
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
    fimse
