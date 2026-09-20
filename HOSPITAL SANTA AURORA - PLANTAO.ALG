@@ -1,30 +1,115 @@
 Algoritmo "Hospital Santa Aurora - Plantao"
 
 Var
-   pediatra, clinico_geral, cirurgiao: caractere
+   pediatra, clinico_geral, cirurgiao, decisao: caractere
    qtd_ped, qtd_clinico, qtd_cirurgiao: inteiro
 
 Inicio
 
-   escreval("Insira a quantidade de Pediatras disponíveis: ")
-   leia(qtd_ped)
-   se (qtd_ped <= 0) entao
-      escreval ("Quantidade inserida nao permitida")
+   escreval ("Você pode criar os plantões dos seguintes turnos:")
+   escreval (" 1 -> manhã, 2 -> tarde, 3 -> noite")
+   escreva ("Digite o numero do plantão que deseja criar: ")
+   leia (decisao)
+
+
+   // Turno da Manhã
+
+
+   se (decisao = "1") entao
+
+      limpatela
+      escreval("Você escolheu o turno da Manhã!")
+      escreval("Insira a quantidade de Pediatras disponíveis: ")
+      leia(qtd_ped)
+
+      se (qtd_ped <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
+      escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico)
+
+      se (qtd_clinico <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
+      escreval("Insira a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao)
+
+      se (qtd_cirurgiao <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
    fimse
 
-   escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
-   leia(qtd_clinico)
-   se (qtd_clinico <= 0) entao
-      escreval ("Quantidade inserida nao permitida")
+
+   // Turno da Tarde
+
+
+   se (decisao = "2") entao
+
+      limpatela
+      escreval("Você escolheu o turno da Tarde!")
+      escreval("Insira a quantidade de Pediatras disponíveis: ")
+      leia(qtd_ped)
+
+      se (qtd_ped <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
+      escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico)
+
+      se (qtd_clinico <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
+      escreval("Insira a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao)
+
+      se (qtd_cirurgiao <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
    fimse
 
-   escreval("Insira a quantidade de Cirurgiões disponíveis: ")
-   leia(qtd_cirurgiao)
-   se (qtd_cirurgiao <= 0) entao
-      escreval ("Quantidade inserida nao permitida")
+
+   // Turno da Noite
+
+
+   se (decisao = "3") entao
+
+      limpatela
+      escreval("Você escolheu o turno da Noite!")
+      escreval("Insira a quantidade de Pediatras disponíveis: ")
+      leia(qtd_ped)
+
+      se (qtd_ped <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
+      escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico)
+
+      se (qtd_clinico <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
+      escreval("Insira a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao)
+
+      se (qtd_cirurgiao <= 0) entao
+         escreval ("Quantidade inserida nao permitida")
+      fimse
+
    fimse
 
+   //Turno Não Idendificado
 
+   limpatela
+   se (decisao >= "4") entao
+      escreval("Turno não identificado!")
+   fimse
 
 
 Fimalgoritmo
