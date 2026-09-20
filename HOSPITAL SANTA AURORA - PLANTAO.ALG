@@ -1,7 +1,7 @@
 Algoritmo "Hospital Santa Aurora - Plantao"
 
 Var
-   pediatra, clinico_geral, cirurgiao, decisao: caractere
+   decisao: caractere
    qtd_ped, qtd_clinico, qtd_cirurgiao: inteiro
 
 Inicio
@@ -22,22 +22,34 @@ Inicio
       escreval("Insira a quantidade de Pediatras disponíveis: ")
       leia(qtd_ped)
 
-      se (qtd_ped <= 0) entao
-         escreval ("Quantidade inserida nao permitida")
+      se (qtd_ped < 1) e (qtd_ped = 0) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 1]")
+      fimse
+
+      se (qtd_ped < 0) entao
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
       leia(qtd_clinico)
 
-      se (qtd_clinico <= 0) entao
-         escreval ("Quantidade inserida nao permitida")
+      se (qtd_clinico < 2) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 2]")
+      fimse
+
+      se (qtd_clinico < 0) entao
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
-      se (qtd_cirurgiao <= 0) entao
-         escreval ("Quantidade inserida nao permitida")
+      se (qtd_cirurgiao < 1) e (qtd_cirurgiao = 0) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 1]")
+      fimse
+
+      se (qtd_cirurgiao < 0) entao
+         escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
    fimse
@@ -53,21 +65,33 @@ Inicio
       escreval("Insira a quantidade de Pediatras disponíveis: ")
       leia(qtd_ped)
 
-      se (qtd_ped <= 0) entao
+      se (qtd_ped < 1) e (qtd_ped = 0) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 1]")
+      fimse
+
+      se (qtd_ped < 0) entao
          escreval ("Quantidade inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
       leia(qtd_clinico)
 
-      se (qtd_clinico <= 0) entao
+      se (qtd_clinico < 2) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 2]")
+      fimse
+
+      se (qtd_clinico < 0) entao
          escreval ("Quantidade inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
-      se (qtd_cirurgiao <= 0) entao
+      se (qtd_cirurgiao < 1) e (qtd_cirurgiao = 0) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 1]")
+      fimse
+
+      se (qtd_cirurgiao < 0) entao
          escreval ("Quantidade inserida nao permitida")
       fimse
 
@@ -84,21 +108,33 @@ Inicio
       escreval("Insira a quantidade de Pediatras disponíveis: ")
       leia(qtd_ped)
 
-      se (qtd_ped <= 0) entao
+      se (qtd_ped < 1) e (qtd_ped = 0) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 1]")
+      fimse
+
+      se (qtd_ped < 0) entao
          escreval ("Quantidade inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
       leia(qtd_clinico)
 
-      se (qtd_clinico <= 0) entao
+      se (qtd_clinico < 2) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 2]")
+      fimse
+
+      se (qtd_clinico < 0) entao
          escreval ("Quantidade inserida nao permitida")
       fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
-      se (qtd_cirurgiao <= 0) entao
+      se (qtd_cirurgiao < 1) e (qtd_cirurgiao = 0) entao
+         escreval("Cobertura mínima não atingida. [Mínimo 1]")
+      fimse
+
+      se (qtd_cirurgiao < 0) entao
          escreval ("Quantidade inserida nao permitida")
       fimse
 
@@ -106,7 +142,6 @@ Inicio
 
    //Turno Não Idendificado
 
-   limpatela
    se (decisao >= "4") entao
       escreval("Turno não identificado!")
    fimse
