@@ -30,6 +30,13 @@ Inicio
          escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
+      //Adicionando regra do limite máximo
+      se (qtd_ped > 50) entao
+         escreval ("Quantidade máxima de Pediatras atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Pediatras disponíveis: ")
+         leia(qtd_ped)
+      fimse
+
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
       leia(qtd_clinico)
 
@@ -41,6 +48,13 @@ Inicio
          escreval ("Quantidade negativa inserida nao permitida")
       fimse
 
+      //Adicionando regra do limite máximo
+      se (qtd_clinico > 50) entao
+         escreval ("Quantidade máxima de Clínicos Gerais atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
+         leia(qtd_clinico)
+      fimse
+
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
 
@@ -50,6 +64,13 @@ Inicio
 
       se (qtd_cirurgiao < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
+      fimse
+
+      //Adicionando regra do limite máximo
+      se (qtd_cirurgiao > 50) entao
+         escreval ("Quantidade máxima de Cirurgiões atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao)
       fimse
 
    fimse
@@ -72,6 +93,13 @@ Inicio
       se (qtd_ped < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
       fimse
+      
+      //Adicionando regra do limite máximo
+      se (qtd_ped > 50) entao
+         escreval ("Quantidade máxima de Pediatras atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Pediatras disponíveis: ")
+         leia(qtd_ped)
+      fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
       leia(qtd_clinico)
@@ -83,6 +111,13 @@ Inicio
       se (qtd_clinico < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
       fimse
+      
+      //Adicionando regra do limite máximo
+      se (qtd_clinico > 50) entao
+         escreval ("Quantidade máxima de Clínicos Gerais atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
+         leia(qtd_clinico)
+      fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
@@ -93,6 +128,13 @@ Inicio
 
       se (qtd_cirurgiao < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
+      fimse
+      
+      //Adicionando regra do limite máximo
+      se (qtd_cirurgiao > 50) entao
+         escreval ("Quantidade máxima de Cirurgiões atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao)
       fimse
 
    fimse
@@ -115,6 +157,13 @@ Inicio
       se (qtd_ped < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
       fimse
+      
+      //Adicionando regra do limite máximo
+      se (qtd_ped > 50) entao
+         escreval ("Quantidade máxima de Pediatras atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Pediatras disponíveis: ")
+         leia(qtd_ped)
+      fimse
 
       escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
       leia(qtd_clinico)
@@ -126,6 +175,13 @@ Inicio
       se (qtd_clinico < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
       fimse
+      
+      //Adicionando regra do limite máximo
+      se (qtd_clinico > 50) entao
+         escreval ("Quantidade máxima de Clínicos Gerais atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Clinicos Gerais disponíveis: ")
+         leia(qtd_clinico)
+      fimse
 
       escreval("Insira a quantidade de Cirurgiões disponíveis: ")
       leia(qtd_cirurgiao)
@@ -136,6 +192,13 @@ Inicio
 
       se (qtd_cirurgiao < 0) entao
          escreval ("Quantidade negativa inserida nao permitida")
+      fimse
+      
+      //Adicionando regra do limite máximo
+      se (qtd_cirurgiao > 50) entao
+         escreval ("Quantidade máxima de Cirurgiões atingida. Verifique a quantidade de médicos novamente")
+         escreval("Insira a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao)
       fimse
 
    fimse
