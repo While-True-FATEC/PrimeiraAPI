@@ -1,7 +1,6 @@
 Algoritmo "Hospital Santa Aurora - Plantao"
 
 Var
-   pediatra, clinico_geral, cirurgiao: caractere
    qtd_ped, qtd_clinico, qtd_cirurgiao, qtd_total: inteiro
 
 Inicio
