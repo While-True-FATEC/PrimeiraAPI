@@ -205,7 +205,7 @@ Inicio
 
    //Turno Não Idendificado
 
-   se (decisao >= "4") entao
+   se (decisao >= "4") ou (decisao <= "0") entao
       escreval("Turno não identificado!")
    fimse
 
