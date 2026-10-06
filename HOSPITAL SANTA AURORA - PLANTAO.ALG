@@ -5,6 +5,7 @@ Var
    qtd_ped_tarde, qtd_clinico_tarde, qtd_cirurgiao_tarde: inteiro
    qtd_ped_noite, qtd_clinico_noite, qtd_cirurgiao_noite: inteiro
    nome_pediatra: caractere
+   id_vetor: vetor [1..50] de caractere
 
 Inicio
 
@@ -51,11 +52,16 @@ Inicio
    se (qtd_ped_manha >= 1) entao
       escreval("Quantidade de Pediatras aceita!")
    fimse
-   
+   // Nome dos pediatras + ID
    para i de 1 ate qtd_ped_manha faca
         escreval("Insira o nome dos pediatras.")
         leia(nome_pediatra)
+
+        id_vetor[i] <- nome_pediatra
+        escreval(id_vetor[i])
+        
    fimpara
+   
 
    //Clinicos Gerais do Turno da Manhã
 
