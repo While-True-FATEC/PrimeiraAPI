@@ -63,8 +63,116 @@ Inicio
         escreval(nome_pediatra[i])
         cont <- cont+1
    fimpara
-   se (cont > qtd_ped_manha) entao
-      escreval("tarde")
+   
+   //Clinicos Gerais do Turno da Manhã
+
+     escreval("Insira a quantidade de Clinicos Gerais que estão disponíveis para o turno da manhã: ")
+   leia(qtd_clinico_manha)
+
+   se (qtd_clinico_manha > 50) entao
+      escreval ("Quantidade máxima de Pediatras ultrapassada. Verifique a quantidade de Clinicos Gerais!")
+      escreval("Insira novamente a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico_manha)
+
+      se (qtd_clinico_manha > 50) entao
+         escreval ("Você exedeu o limite máximo de Clinicos Gerais!")
+         fimalgoritmo
+      fimse
    fimse
+
+   se (qtd_clinico_manha = 1) entao
+      escreval("Cobertura mínima não atingida. [Mínimo 2]. Insira novamente a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico_manha)
+
+      se (qtd_clinico_manha = 1) entao
+         escreval ("Você não atingiu o número mínimo de Clinicos Gerais!")
+         fimalgoritmo
+      fimse
+   fimse
+
+   se (qtd_clinico_manha = 0) entao
+      escreval("Cobertura mínima não atingida. [Mínimo 2]. Insira novamente a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico_manha)
+
+      se (qtd_clinico_manha = 0) entao
+         escreval ("Você não atingiu o número mínimo de Clinicos Gerais!")
+         fimalgoritmo
+      fimse
+   fimse
+
+   se (qtd_clinico_manha < 0) entao
+      escreval ("Quantidade negativa inserida não permitida!")
+      escreval("Insira novamente a quantidade de Clinicos Gerais disponíveis: ")
+      leia(qtd_clinico_manha)
+
+      se (qtd_clinico_manha < 0) entao
+         escreval ("Você não atingiu o número mínimo de Clinicos Gerais!")
+         fimalgoritmo
+      fimse
+   fimse
+
+   se (qtd_clinico_manha >= 2) entao
+      escreval("Quantidade de Clinicos Gerais aceita!")
+   fimse
+   
+   // Nome dos clinicos + ID
+   para i de 1 ate qtd_clinico_manha faca
+        escreval("Insira o nome dos clinicos.")
+        leia(nome_clinico[i])
+
+        escreval(nome_clinico[i])
+        cont <- cont+1
+   fimpara
+
+
+   //Cirurgião do Turno da Manhã
+
+   escreval("Insira a quantidade de Cirurgiões que estão disponíveis para o turno da manhã: ")
+   leia(qtd_cirurgiao_manha)
+
+   se (qtd_cirurgiao_manha > 50) entao
+      escreval ("Quantidade máxima de Cirurgiões ultrapassada. Verifique a quantidade de Cirurgiões!")
+      escreval("Insira novamente a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao_manha)
+
+      se (qtd_cirurgiao_manha > 50) entao
+         escreval ("Você exedeu o limite máximo de Cirurgiões!")
+         fimalgoritmo
+      fimse
+   fimse
+
+   se (qtd_cirurgiao_manha = 0) entao
+      escreval("Cobertura mínima não atingida. [Mínimo 1]. Insira novamente a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao_manha)
+
+      se (qtd_cirurgiao_manha = 0) entao
+         escreval ("Você não atingiu o número mínimo de Cirurgiões!")
+         fimalgoritmo
+      fimse
+   fimse
+
+   se (qtd_cirurgiao_manha < 0) entao
+      escreval ("Quantidade negativa inserida não permitida!")
+      escreval("Insira novamente a quantidade de Cirurgiões disponíveis: ")
+      leia(qtd_cirurgiao_manha)
+
+      se (qtd_cirurgiao_manha < 0) entao
+         escreval ("Você não atingiu o número mínimo de Cirurgiões!")
+         fimalgoritmo
+      fimse
+   fimse
+
+   se (qtd_cirurgiao_manha >= 1) entao
+      escreval("Quantidade de Cirurgiões aceita!")
+   fimse
+   
+   // Nome dos clinicos + ID
+   para i de 1 ate qtd_cirurgiao_manha faca
+        escreval("Insira o nome dos cirurgiões.")
+        leia(nome_cirurgiao[i])
+
+        escreval(nome_cirurgiao[i])
+        cont <- cont+1
+   fimpara
    
   fimalgoritmo
