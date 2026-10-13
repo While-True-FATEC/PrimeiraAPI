@@ -2,7 +2,7 @@
 
 ## MedShift - Hospital Santa Aurora.
 
-<!--<img src="image.gif" alt="grupo"> vou mudar a logo posteriormente-->
+<!--<img src="image.gif" alt="grupo"> vou mudar a logo posteriormente.-->
 
 ### 🌟 Desafio
 
