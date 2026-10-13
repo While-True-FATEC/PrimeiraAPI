@@ -115,6 +115,7 @@ Inicio
       escreval("Quantidade de Clinicos Gerais aceita!")
    fimse
    
+<<<<<<< HEAD
    // Nome dos clinicos + ID
    para i de 1 ate qtd_clinico_manha faca
         escreval("Insira o nome dos clinicos.")
@@ -174,5 +175,8 @@ Inicio
         escreval(nome_cirurgiao[i])
         cont <- cont+1
    fimpara
+=======
+   escreval("Isabelle")
+>>>>>>> a76a7d57a5915c1b663b15109ed5e6e9ac99a982
    
   fimalgoritmo
