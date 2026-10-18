@@ -17,14 +17,9 @@ Var
 
    // IDENTIFICACAO DOS MEDICOS
 
-   id_clinico1, id_clinico2, id_clinico3, id_clinico4, id_clinico5: inteiro
-   id_clinico6, id_clinico7, id_clinico8, id_clinico9: inteiro
-
-   id_pediatra1, id_pediatra2, id_pediatra3, id_pediatra4, id_pediatra5: inteiro
-   id_pediatra6, id_pediatra7, id_pediatra8: inteiro
-
-   id_cirurgiao1, id_cirurgiao2, id_cirurgiao3, id_cirurgiao4, id_cirurgiao5: inteiro
-   id_cirurgiao6, id_cirurgiao7, id_cirurgiao8: inteiro
+   id_clinico: vetor[1..9] de inteiro
+   id_pediatra: vetor[1..8] de inteiro
+   id_cirurgiao: vetor[1..8] de inteiro
 
 
    // VETORES DE QUANTIDADES
@@ -50,41 +45,22 @@ Var
 
 Inicio
 
-   // IDENTIFICACAO DOS MEDICOS
+      // IDENTIFICACAO DOS MEDICOS
 
    // CLINICOS GERAIS
-
-   id_clinico1 <- 1
-   id_clinico2 <- 2
-   id_clinico3 <- 3
-   id_clinico4 <- 4
-   id_clinico5 <- 5
-   id_clinico6 <- 6
-   id_clinico7 <- 7
-   id_clinico8 <- 8
-   id_clinico9 <- 9
+   para i de 1 ate 9 faca
+      id_clinico[i] <- i
+   fimpara
 
    // PEDIATRAS
-
-   id_pediatra1 <- 10
-   id_pediatra2 <- 11
-   id_pediatra3 <- 12
-   id_pediatra4 <- 13
-   id_pediatra5 <- 14
-   id_pediatra6 <- 15
-   id_pediatra7 <- 16
-   id_pediatra8 <- 17
+   para i de 1 ate 8 faca
+      id_pediatra[i] <- i + 9
+   fimpara
 
    // CIRURGOES
-
-   id_cirurgiao1 <- 18
-   id_cirurgiao2 <- 19
-   id_cirurgiao3 <- 20
-   id_cirurgiao4 <- 21
-   id_cirurgiao5 <- 22
-   id_cirurgiao6 <- 23
-   id_cirurgiao7 <- 24
-   id_cirurgiao8 <- 25
+   para i de 1 ate 8 faca
+      id_cirurgiao[i] <- i + 17
+   fimpara
 
    // IDENTIFICACAO DAS ESPECIALIDADES
 
