@@ -12,37 +12,46 @@ Inicio
    escolhe <- "S"
 
    enquanto (escolhe = "S") faca
+      repita
+         escreval("Especialidade: [1] Pediatra | [2] Clínico | [3] Cirurgião")
+         leia(especialidade[i])
+         se (especialidade[i] <> 1) e (especialidade[i] <> 2) e (especialidade[i] <> 3) entao
+              escreval("Digite um número válido.")
+         fimse
+      ate (especialidade[i] = 1) ou (especialidade[i] = 2) ou (especialidade[i] = 3)
 
-      escreval("Especialidade: [1] Pediatra | [2] ClÃ­nico | [3] CirurgiÃ£o")
-      leia(especialidade[i])
-      
       escreval("")
-
-      escreval("Disponibilidade: [1] ManhÃ£ | [2] Tarde | [3] Noite | [4] ManhÃ£ e Tarde | [5] ManhÃ£ e Noite | [6] Tarde e Noite")
-      leia(disponibilidade[i])
       
+      repita
+         escreval("Disponibilidade: [1] Manhã | [2] Tarde | [3] Noite | [4] Manhã e Tarde | [5] Manhã e Noite | [6] Tarde e Noite")
+         leia(disponibilidade[i])
+         se(disponibilidade[i] <> 1) e (disponibilidade[i] <> 2) e (disponibilidade[i] <> 3) e (disponibilidade[i] <> 4) e (disponibilidade[i] <> 5) e (disponibilidade[i] <> 6) entao
+              escreval("Digite um número válido.")
+         fimse
+      ate (disponibilidade[i] = 1) ou (disponibilidade[i] = 2) (disponibilidade[i] = 3) ou (disponibilidade[i] = 4) (disponibilidade[i] = 5) ou (disponibilidade[i] = 6)
+
       escreval("")
 
       escreval("Nome do especialista:")
-      leia(nome[i]) //Eu entendi o porquÃª o vetor que eu criei anteriormente Ã© fÃºtil (o ID jÃ¡ fazia o trabalho dele pra dar match com outros).
-      
+      leia(nome[i]) //Eu entendi o porquê o vetor que eu criei anteriormente é fútil (o ID já fazia o trabalho dele pra dar match com outros).
+
       limpatela
-      
+
       escreval("===========================")
-      escreval("      FICHA DO MÃ‰DICO      ")
+      escreval("      FICHA DO MÉDICO      ")
       escreval("===========================")
       se(especialidade[i] = 1) entao
          escreval("Especialidade: Pediatra")
       fimse
       se(especialidade[i] = 2) entao
-         escreval("Especialidade: ClÃ­nico Geral")
+         escreval("Especialidade: Clínico Geral")
       fimse
       se(especialidade[i] = 3) entao
-         escreval("Especialidade: CirurgiÃ£o")
+         escreval("Especialidade: Cirurgião")
       fimse
-         
+
       se(disponibilidade[i] = 1) entao
-         escreval("Turno: ManhÃ£")
+         escreval("Turno: Manhã")
       fimse
       se(disponibilidade[i] = 2) entao
          escreval("Turno: Tarde")
@@ -51,21 +60,21 @@ Inicio
          escreval("Turno: Noite")
       fimse
       se(disponibilidade[i] = 4) entao
-         escreval("Turno: ManhÃ£ e Tarde")
+         escreval("Turno: Manhã e Tarde")
       fimse
       se(disponibilidade[i] = 5) entao
-         escreval("Turno: ManhÃ£ e Noite")
+         escreval("Turno: Manhã e Noite")
       fimse
       se(disponibilidade[i] = 6) entao
          escreval("Turno: Tarde e Noite")
       fimse
-      
+
       escreval("Nome do Especialista: ", nome[i])
-      
+
       escreval("ID do Especialista: ", i)
-      
+
       escreval("")
-      
+
       escreval("Realizar um novo cadastro? [S/N]")
       leia(escolhe)
 
@@ -75,7 +84,7 @@ Inicio
       fimenquanto
 
       se (escolhe = "S") entao
-         i <- i + 1 //Para o prÃ³ximo ID.
+         i <- i + 1 //Para o próximo ID.
       senao
          escreval("Cadastro encerrado.") //Em tese, ele volta para o MENU (parte do Paulo).
       fimse
