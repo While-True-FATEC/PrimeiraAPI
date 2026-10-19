@@ -1,48 +1,80 @@
 Algoritmo "Hospital Santa Aurora - Plantao"
-//Teste somente com o pediatra do turno manhã.
+
 Var
    i: inteiro
    especialidade: vetor [1..10] de inteiro
-   dispo: vetor [1..10] de inteiro
-   nome_pediatra_manha: vetor [1..10] de caractere
-   escolhaa: caractere
+   disponibilidade: vetor [1..10] de inteiro
+   nome: vetor [1..10] de caractere
+   escolhe: caractere
 
 Inicio
    i <- 1
-   escolhaa <- "S"
+   escolhe <- "S"
 
-   enquanto (escolhaa = "S") faca
+   enquanto (escolhe = "S") faca
 
       escreval("Especialidade: [1] Pediatra | [2] Clínico | [3] Cirurgião")
       leia(especialidade[i])
+      
+      escreval("")
 
-      escreval("Disponibilidade: [1] Manhã | [2] Tarde | [3] Noite")
-      leia(dispo[i])
+      escreval("Disponibilidade: [1] Manhã | [2] Tarde | [3] Noite | [4] Manhã e Tarde | [5] Manhã e Noite | [6] Tarde e Noite")
+      leia(disponibilidade[i])
+      
+      escreval("")
 
       escreval("Nome do especialista:")
-
-      se (especialidade[i] = 1) entao
-         se (dispo[i] = 1) entao
-            leia(nome_pediatra_manha[i])
-         fimse
-      fimse
+      leia(nome[i]) //Eu entendi o porquê o vetor que eu criei anteriormente é fútil (o ID já fazia o trabalho dele pra dar match com outros).
       
       limpatela
       
-      escreval(dispo[i]) //Irei colocar o condicional se para aparecer o nome dos turnos.
-      escreval(especialidade[i]) //Isso vale pra esse também.
-      escreval(nome_pediatra_manha[i])
+      escreval("===========================")
+      escreval("      FICHA DO MÉDICO      ")
+      escreval("===========================")
+      se(especialidade[i] = 1) entao
+         escreval("Especialidade: Pediatra")
+      fimse
+      se(especialidade[i] = 2) entao
+         escreval("Especialidade: Clínico Geral")
+      fimse
+      se(especialidade[i] = 3) entao
+         escreval("Especialidade: Cirurgião")
+      fimse
+         
+      se(disponibilidade[i] = 1) entao
+         escreval("Turno: Manhã")
+      fimse
+      se(disponibilidade[i] = 2) entao
+         escreval("Turno: Tarde")
+      fimse
+      se(disponibilidade[i] = 3) entao
+         escreval("Turno: Noite")
+      fimse
+      se(disponibilidade[i] = 4) entao
+         escreval("Turno: Manhã e Tarde")
+      fimse
+      se(disponibilidade[i] = 5) entao
+         escreval("Turno: Manhã e Noite")
+      fimse
+      se(disponibilidade[i] = 6) entao
+         escreval("Turno: Tarde e Noite")
+      fimse
       
-
+      escreval("Nome do Especialista: ", nome[i])
+      
+      escreval("ID do Especialista: ", i)
+      
+      escreval("")
+      
       escreval("Realizar um novo cadastro? [S/N]")
-      leia(escolhaa)
+      leia(escolhe)
 
-      enquanto (escolhaa <> "S") e (escolhaa <> "N") faca
+      enquanto (escolhe <> "S") e (escolhe <> "N") faca
          escreval("Insira S ou N.")
-         leia(escolhaa)
+         leia(escolhe)
       fimenquanto
 
-      se (escolhaa = "S") entao
+      se (escolhe = "S") entao
          i <- i + 1 //Para o próximo ID.
       senao
          escreval("Cadastro encerrado.") //Em tese, ele volta para o MENU (parte do Paulo).
