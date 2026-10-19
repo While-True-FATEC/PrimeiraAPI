@@ -28,7 +28,7 @@ Inicio
          se(disponibilidade[i] <> 1) e (disponibilidade[i] <> 2) e (disponibilidade[i] <> 3) e (disponibilidade[i] <> 4) e (disponibilidade[i] <> 5) e (disponibilidade[i] <> 6) entao
               escreval("Digite um número válido.")
          fimse
-      ate (disponibilidade[i] = 1) ou (disponibilidade[i] = 2) (disponibilidade[i] = 3) ou (disponibilidade[i] = 4) (disponibilidade[i] = 5) ou (disponibilidade[i] = 6)
+      ate (disponibilidade[i] = 1) ou (disponibilidade[i] = 2) ou (disponibilidade[i] = 3) ou (disponibilidade[i] = 4) ou (disponibilidade[i] = 5) ou (disponibilidade[i] = 6)
 
       escreval("")
 
