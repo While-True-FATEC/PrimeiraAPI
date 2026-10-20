@@ -104,7 +104,7 @@ limpatela
            se (especialidade[id]=2) entao
            escreval ("Especialidade: Clinico Geral")
            senao
-           escreval ("Especialidade: cirugião")
+           escreval ("Especialidade: Cirugião")
            fimse
       fimse
 
