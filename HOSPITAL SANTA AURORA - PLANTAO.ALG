@@ -2,10 +2,11 @@ Algoritmo "Hospital Santa Aurora - Plantao"
 
 Var
    i: inteiro
-   especialidade: vetor [1..10] de inteiro
-   disponibilidade: vetor [1..10] de inteiro
-   nome: vetor [1..10] de caractere
+   especialidade: vetor [1..30] de inteiro
+   disponibilidade: vetor [1..30] de inteiro
+   nome: vetor [1..30] de caractere
    escolhe: caractere
+   id: inteiro
 
 Inicio
    i <- 1
@@ -91,4 +92,53 @@ Inicio
 
    fimenquanto
 
+limpatela
+
+   escreval ("==================================")
+   escreval ("      PESQUISA MÉDICA POR ID      ")
+   escreval ("==================================")
+   escreval ("         INSIRA O ID MÉDICO       ")
+   escreval ("==================================")
+   leia (id)
+   
+   se (id >=1) e (id <=i) entao
+   escreval ("==================================")
+   escreval ("======= MÉDICO ENCONTRADO ========")
+   escreval ("Nome: ", nome[id])
+   escreval ("ID: ", id)
+
+      se (especialidade[id]=1) entao
+         escreval("Especialidade: Pediatra)")
+      senao
+           se (especialidade[id]=2) entao
+           escreval ("Especialidade: Clinico Geral")
+           senao
+           escreval ("Especialidade: Cirugião")
+           fimse
+      fimse
+
+    se (disponibilidade[id]=1) entao
+       escreval ("Turno Manhã")
+    senao
+      se (disponibilidade[id]=2) entao
+         escreval ("Turno Tarde)
+      senao
+        se (disponibilidade[id]=3) entao
+           escreval ("Turno Noite")
+        senao
+          se (disponibilidade[id]=4) entao
+             escreval ("Turno Manhã e Tarde")
+          senao
+            se (disponibilidade[id]=5) entao
+               escreval ("Turno Manhã e Noite")
+            senao
+              escreval ("Turno Tarde e Noite")
+            fimse
+          fimse
+        fimse
+      fimse
+    fimse
+senao
+ escreval("ID inválido. Médico não cadastrado")
+fimse
 Fimalgoritmo
