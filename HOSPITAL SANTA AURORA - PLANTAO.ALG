@@ -2,9 +2,9 @@ Algoritmo "Hospital Santa Aurora - Plantao"
 
 Var
    i: inteiro
-   especialidade: vetor [1..10] de inteiro
-   disponibilidade: vetor [1..10] de inteiro
-   nome: vetor [1..10] de caractere
+   especialidade: vetor [1..30] de inteiro
+   disponibilidade: vetor [1..30] de inteiro
+   nome: vetor [1..30] de caractere
    escolhe: caractere
    id: inteiro
 
