@@ -6,6 +6,7 @@ Var
    disponibilidade: vetor [1..10] de inteiro
    nome: vetor [1..10] de caractere
    escolhe: caractere
+   id: inteiro
 
 Inicio
    i <- 1
