@@ -7,7 +7,7 @@ Var
    i, turno: inteiro
    menu, continuar: inteiro
    especialidade, disponibilidade: inteiro
-   id_atual, pode_cadastrar: inteiro
+   id_atual, pode_cadastrar, idbusca: inteiro
 
    // CONTROLE DOS CADASTROS
 
@@ -469,11 +469,14 @@ Inicio
 
       escreval(" ")
       escreval("TURNO DA MANHA")
+      escreval(" ")
+      escreval("Qual id você quer pesquisar: ")
+      leia(idbusca)
 
       se (cadastrado[1] = 1) entao
-         escreval(esp_pediatra, ": ", qtd_pediatras[1])
-         escreval(esp_clinico_geral, ": ", qtd_clinicos[1])
-         escreval(esp_cirurgiao, ": ", qtd_cirurgioes[1])
+         escreval(esp_pediatra, ": ", qtd_pediatras[1], ": ", nome_medico[idbusca])
+         escreval(esp_clinico_geral, ": ", qtd_clinicos[1], ": ", nome_medico[idbusca])
+         escreval(esp_cirurgiao, ": ", qtd_cirurgioes[1],  ": ", nome_medico[idbusca])
       senao
          escreval("Nenhum medico disponivel neste turno.")
       fimse
