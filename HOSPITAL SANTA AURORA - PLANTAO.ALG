@@ -185,5 +185,4 @@ Inicio
 
    LimpaTela
    Escreval("Sistema encerrado. Obrigado!")
-
 Fimalgoritmo
