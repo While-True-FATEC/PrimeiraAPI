@@ -11,23 +11,13 @@ O desafio consiste em criar um sistema que ajude a organizar e validar plantões
 ---
 
 ### 🌟 Backlog do produto
-<!--
-| User Story |  Sprint  | Prioridade |
-| ---------- | -------- | ---------- |
-| Dado 1     | Dado 2   | Dado 3     |
-| Dado 4     | Dado 5   | Dado 6     |
-| Dado 1     | Dado 2   | Dado 3     |
-| Dado 4     | Dado 5   | Dado 6     |
--->
----
 
-### 🌟 Cronograma do projeto
+O Product Backlog reúne as histórias de usuário, os critérios de aceitação e as prioridades das funcionalidades do MedShift.
 
-***
-
-### 🌟 Sprints
+📄 [Acessar o Product Backlog completo](./Backlog%20API%20Medshift.xlsx)
 
 ---
+
 
 ### 🌟 Tecnologias do projeto
 
@@ -37,16 +27,15 @@ O desafio consiste em criar um sistema que ajude a organizar e validar plantões
 
 ---
 
-### 🌟 Estrutura do projeto
-
----
-
-### 🌟 Forma de execução
-
----
-
-### 🌟 Documentação
-
----
-
 ### 🌟 Nossa equipe
+
+Somos a **While True**, equipe responsável pelo desenvolvimento do MedShift, projeto acadêmico que busca aplicar conhecimentos de lógica de programação na organização e validação de plantões médicos.
+
+| Integrante | GitHub | Função |
+|---|---|---|
+| André | [@andreluke](https://github.com/andreluke) | Dev |
+| Camila | [@Mila-Bueno](https://github.com/Mila-Bueno) | PO |
+| Isabelle | [@isa-zka](https://github.com/isa-zka) | Dev |
+| Paulo Victor | [@paulovperez](https://github.com/paulovperez) | Dev |
+| Ricardo | [@RicardoJunior-Git](https://github.com/RicardoJunior-Git) | SM |
+| Sara | [@bancodedadossara-art](https://github.com/bancodedadossara-art) | Dev |
