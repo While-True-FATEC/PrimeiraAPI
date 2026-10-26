@@ -12,12 +12,11 @@ O desafio consiste em criar um sistema que ajude a organizar e validar plantões
 
 ### 🌟 Backlog do produto
 
-O Product Backlog reúne as histórias de usuário, os critérios de aceitação e as prioridades das funcionalidades do MedShift.
+O Product Backlog reúne as histórias de usuário, os critérios de aceitação e as prioridades das funcionalidades planejadas para o MedShift.
 
-📄 [Acessar o Product Backlog completo](./Backlog%20API%20Medshift.xlsx)
+📊 [Baixar Product Backlog (.xlsx)](./Backlog%20API%20Medshift.xlsx)
 
 ---
-
 
 ### 🌟 Tecnologias do projeto
 
