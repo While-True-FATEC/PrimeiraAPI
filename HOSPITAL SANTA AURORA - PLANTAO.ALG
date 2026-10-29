@@ -776,14 +776,14 @@ Inicio
          escreval("----------------------------------------")
 
          se qtd_cad_medicos = 0 entao
-            escreval("PLANTAO NAO PODE SER REGISTRADO!")
+            escreval("PLANTAO NAO PODE SER PUBLICADO!")
             escreval("Motivo: Nenhum médico foi cadastrado.")
          senao
             se plantao_valido = falso entao
-               escreval("PLANTAO NAO PODE SER REGISTRADO!")
+               escreval("PLANTAO NAO PODE SER PUBLICADO!")
                escreval("Motivo: Falta profissional em uma ou mais especialidades/turnos.")
             senao
-               escreval("PLANTAO REGISTRADO!")
+               escreval("PLANTAO PUBLICADO!")
                escreval("Obrigado por utilizar o Medshift!")
             fimse
          fimse
@@ -1610,14 +1610,14 @@ Inicio
    escreval("----------------------------------------")
 
    se qtd_cad_medicos = 0 entao
-      escreval("PLANTAO NAO PODE SER REGISTRADO!")
+      escreval("PLANTAO NAO PODE SER PUBLICADO!")
       escreval("Motivo: nenhum medico foi cadastrado.")
    senao
       se plantao_valido = falso entao
-         escreval("PLANTAO NAO PODE SER REGISTRADO!")
+         escreval("PLANTAO NAO PODE SER PUBLICADO!")
          escreval("Motivo: Falta profissional em uma ou mais especialidades/turnos.")
       senao
-         escreval("PLANTAO REGISTRADO!")
+         escreval("PLANTAO PUBLICADO!")
          escreval("Obrigado por utilizar o Medshift!")
       fimse
    fimse
